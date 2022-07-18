@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--week 1 assignment, html tags
+Assignment: UAT Space Program - We Have SOUND!
+Connor Kovacs
+kovacsconnor00@gmail.com-->
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">"
+    <script src="code.js"></script>
+    <script src="dataLoader-1.js"></script>
+    <script src="launchDataDis.js"></script>
+    <title>
+        Connor Kovacs's UATSpace Page
+    </title>
+    <script>
+        var theTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getData();
+    </script>
+</head>
+
+<body>
+    </table>
+        <tr>
+            <td><img src="UATspaceLogo-2.jpg"></td>
+            <td>
+                <h1>
+                    UAT Space Program
+                </h1>
+            </td>
+        </tr>
+    </table>
+
+
+    <!--data table-->
+    <table id = "data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <!--these are to set the styles of the columns of the table-->
+        <thead>
+            <th>
+                Data Type
+            </th>
+            <th>
+                Reading
+            </th>
+            <!--the two headings for the two columns-->
+        </thead>
+        <tbody>
+            <tr id="seconds">
+            </tr>
+            <tr id="latitude">
+            </tr>
+            <tr id="Longitude">
+            </tr>
+            <tr id="gps_altitude">
+            </tr>
+            <tr id="bmp_altitude">                
+            </tr>
+            <tr id="bmp_pressure">                
+            </tr>
+            <tr id="bmp_temperature">                
+            </tr>
+            <tr id="dig_temperature">                
+            </tr>
+            <tr id="css_temperature">                
+            </tr>
+            <tr id="css_eCO2">                
+            </tr>
+            <tr id="css_TVOC">                                
+            </tr>
+            <tr id="UV">                
+            </tr>
+            <tr id="accelX">                
+            </tr>
+            <tr id="accelY">                
+            </tr>
+            <tr id="accelZ">                
+            </tr>
+            <tr id="magneticX">                
+            </tr>
+            <tr id="magneticY">                
+            </tr>
+            <tr id="magneticZ">                
+            </tr>
+            <tr id="magneticX">                
+            </tr>
+            <tr id="gyroX">                
+            </tr> 
+            <tr id="gyroY">                
+            </tr>
+            <tr id="gyroZ">                
+            </tr>           
+        </tbody>
+        
+    </table><br>
+    
+    
+    <button onclick="startFun();" class="button" id="startButton">Start</button>
+    <!--the two buttons for the next assingment-->
+    <button onclick="stopFun();"class="button" id="stopButton">Stop</button><br>
+   
+   
+    <!--for our craps game for html we need:
+    1.button to play craps
+    2.A crap status line
+    3.Header for the game "craps played here"-->
+    <!-- The UAT Space team finished thier website project with record  time, so they decided in their free time
+    and to make it look like they still needed to do work, they decided to insert a craps table. The put it on the main 
+page simply because they could. they knew it was so simple to disable they could simply remove this in an instant. So for now 
+they decided to have fun and continue betting on random numbers on a website.-->
+    <h2>Please try your hand at Craps!</h2>
+    <br>
+    <div id="crapsStatus">Craps Status</div><br>
+    <button onclick="PlayCraps()"class="button">Play Craps</button><br>
+    <br>
+    <br>
+    <h3>Play space station sounds</h3>
+    <h4>warning, audio is loud.</h4>
+    <button class="button" onclick="playStation();">Play Audio</button>
+
+</body>
+
+</html>
